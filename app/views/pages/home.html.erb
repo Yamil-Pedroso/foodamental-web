@@ -1,17 +1,56 @@
 <div style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80'); background-repeat: no-repeat; background-position: center center; background-size: cover; width: 100%; height: 800px;">FOODAMENAL</div>
 
 <div class="">
-  <div>
+
+  <!-- ENUNCIADO -->
+  <div class="enun-wrapper">
      <h2>
        Roughly one-third of the food produced in the world for human consumption every year - approximately 1.3 billion tonnes - gets lost or wasted.Let's create awareness to distribute and consume our food in a better way.
      </h2>
   </div>
 
-  <div>
-    <h2>
-      RECOMENDATIONS
-    </h2>
-    <p>Adopt a healthier, more sustainable diet</p>
+  <!-- RECOMENDATIONS -->
+  <div class="recomendation-wrapper">
+    <div>
+      <h2>
+        RECOMENDATIONS
+      </h2>
+      <p>Adopt a healthier, more sustainable diet</p>
+    </div>
+     <%= link_to image_tag("https://images.unsplash.com/photo-1464454709131-ffd692591ee5?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2676&q=80", alt: "food", class: "rec-img") %>
   </div>
-   <%= link_to image_tag("https://images.unsplash.com/photo-1464454709131-ffd692591ee5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2676&q=80", alt: "food", class: "rec-img") %>
+
+    <!-- FOOD WASTE LATEST NEWS -->
+   <div class="latest-new-wrapper">
+     <div class="left-cont-latestnews">
+        <h2>
+          Latest News
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem,
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <%= link_to image_tag("https://www.usda.gov/sites/default/files/2021-10/flw-roundtable-food-waste-reduction-blog-102821.jpg", class:   "wfood-img") %>
+     </div>
+     <div class="right-cont-latestnews">
+       <h4>View All News</h4>
+       <h1>
+          LOREM IPSUM THEM
+          LOREM IPSUM THEM
+          LOREM.
+        </h1>
+        <h3>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem,
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </h3>
+        <%= button_to "READ MORE", class: "latestnews-btn" %>
+     </div>
+   </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonials-wrapper">
+       <div class="left-cont-testimonials">
+       </div>
+       <div class="right-cont-testimonials">
+       </div>
+    </div>
 </div>
