@@ -1,0 +1,22 @@
+.footer-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.left-footer {
+  background-color: #FDA500;
+  width: 842px;
+  height: 664px;
+  border-top-right-radius: 30px;
+  z-index: 1;
+
+}
+
+.right-footer {
+  background-color: #10200f;
+  width: 940px;
+  height: 550px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
