@@ -29,5 +29,25 @@
 .testimonial-text-wrapper {
     background-color: #D9D9D9;
     width: 100%;
-    height: 650px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.each-testimonial {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.each-testimonial span {
+  color: #95A530;
+}
+
+.each-testimonial h4 {
+  text-align: center;
 }

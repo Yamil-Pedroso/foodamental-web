@@ -18,3 +18,17 @@
   right: 0;
   z-index: 100;
 }
+
+.current-user {
+  display: flex;
+  align-items: center;
+}
+
+.current-user h4 {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.current-user h5 {
+  margin: 0;
+}
