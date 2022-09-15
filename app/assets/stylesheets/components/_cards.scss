@@ -6,3 +6,23 @@
 .card-style:hover {
   transform: scale(1.2);
 }
+
+.card-tip {
+  width: 260px;
+  height: 150px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #95A530;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.3rem;
+  overflow: hidden;
+}
+
+.text-tip-wrapper {
+  width: 80%;
+  display: flex;
+  margin-top: 16px;
+}

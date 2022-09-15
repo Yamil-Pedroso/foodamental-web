@@ -11,7 +11,7 @@
   </head>
 
   <body class="<%= params[:controller].tr("/", "-") %> <%= params[:action] %>">
-    <%= render "shared/navbar" %>
+    <%= render "shared/navbar" unless @disable_nav %>
     <%= render "shared/flashes" %>
     <%= yield %>
   </body>
