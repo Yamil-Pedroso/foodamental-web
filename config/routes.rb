@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'testimonials/index'
+  get 'testimonials/show'
+  get 'testimonials/new'
+  get 'testimonials/edit'
+  get 'testimonials/update'
+  get 'testimonials/destroy'
   devise_for :users
   root to: "pages#home"
   get 'pages/recommendations'
