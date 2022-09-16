@@ -1,8 +1,8 @@
 <div class="banner-wrapper">
-  <div style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80'); background-repeat: no-repeat; background-position:   center center; background-size: cover; width: 100%; height: 900px;" id="banner">
+  <div style="background-image: url('https://images.unsplash.com/photo-1601906451998-bb5e51856e45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80'); background-repeat: no-repeat; background-position:   center center; background-size: cover; width: 100%; height: 900px;" id="banner">
     <div class="foodamental-text-wrapper">
       <h1>FOODAMENAL</h1>
-      <a href="https://www.foodamental.com/" class="visit-btn">VISIT SITE</a>
+      <a href="https://www.foodamental.com/" class="visit-btn">DISCOVER</a>
     </div>
   </div>
 </div>
@@ -20,11 +20,13 @@
   <!-- RECOMENDATIONS -->
   <div class="recomendation-wrapper">
     <div>
-      <h2>
+      <h1 style="font-family: Abhaya;">
         RECOMENDATIONS
-      </h2>
-      <p>Adopt a healthier, more sustainable diet</p>
-      <%= link_to "Learn more", "pages/recommendations", class: "learn-more-btn" %>
+      </h1>
+      <h5>Adopt a healthier, more sustainable diet</h5>
+      <div class="learn-btn-wrapper">
+        <%= link_to "Learn more", "pages/recommendations", class: "learn-more-btn" %>
+      </div>
     </div>
     <div>
       <%= link_to image_tag("https://images.unsplash.com/photo-1464454709131-ffd692591ee5?ixlib=rb-1.2.1&   ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2676&q=80", alt: "food", class: "rec-img") %>
@@ -34,27 +36,37 @@
 
     <!-- FOOD WASTE LATEST NEWS -->
    <div class="latest-new-wrapper">
+
      <div class="left-cont-latestnews">
-        <h2>
-          Latest News
-        </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem,
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <%= link_to image_tag("https://www.usda.gov/sites/default/files/2021-10/flw-roundtable-food-waste-reduction-blog-102821.jpg", class:   "wfood-img") %>
+        <div class="text-ln-wrapper">
+          <h1 style="font-family: Abhaya;">
+            Latest News
+          </h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem,
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="latestnews-text-wrapper">
+          <%= link_to image_tag("https://www.usda.gov/sites/default/files/2021-10/flw-roundtable-food-waste-reduction-blog-102821.jpg", class:   "wfood-img") %>
+        </div>
      </div>
+
      <div class="right-cont-latestnews">
-       <h4>View All News</h4>
-       <h1>
-          LOREM IPSUM THEM
-          LOREM IPSUM THEM
-          LOREM.
-        </h1>
-        <h3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem,
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </h3>
-        <%= button_to "READ MORE", class: "latestnews-btn" %>
+       <div class="right-cont-wrapper">
+         <h4>View All News</h4>
+         <h1 style="font-family: Abhaya;">
+            LOREM IPSUM THEM
+            LOREM IPSUM THEM
+            LOREM.
+          </h1>
+          <h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem,
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h3>
+          <div class="latestnews-btn-wrapper">
+            <%= link_to "READ MORE", "pages/news",  class: "latestnews-btn" %>
+          </div>
+       </div>
      </div>
    </div>
    <!-- FINISH FOOD WASTE LATEST NEWS -->
@@ -66,9 +78,9 @@
        <div class="right-cont-testimonials">
          <div class="testimonials-title">
             <p>Testimonials</p>
-            <p>Saving Food</p>
+            <p>Come to us, saving food</p>
          </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem,
+            <p class="testimonial-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem,
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
        </div>

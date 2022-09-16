@@ -5,7 +5,7 @@
 }
 
 .left-footer {
-  background-color: #FDA500;
+  background-color: $foodamental-yellow;
   width: 920px;
   height: 550px;
   display: flex;
@@ -26,15 +26,6 @@
   font-weight: 700;
   width: 50%;
   line-height: 1.1;
-}
-
-.left-footer :nth-child(3) {
-  text-decoration: none;
-  padding: 30px 60px;
-  background-color: #fff;
-  color: #FDA500;
-  font-weight: bold;
-  border-radius: 5px;
 }
 
 .right-footer {

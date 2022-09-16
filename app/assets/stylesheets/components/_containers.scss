@@ -1,16 +1,39 @@
+.enun-wrapper {
+  width: 65%;
+  margin: 50px auto;
+}
+
 .recomendation-wrapper {
   margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.learn-btn-wrapper {
+  margin-top: 30px;
 }
 
 .latest-new-wrapper {
   display: flex;
   margin-top: 100px;
+  position: relative;
 }
 
 .right-cont-latestnews {
   width: 980px;
   height: 950px;
-  background-color: #FDA500;
+  background-color: $foodamental-yellow;
+  position: relative;
+}
+
+.right-cont-wrapper {
+  width: 70%;
+  margin: 150px auto;
+}
+
+.latestnews-btn-wrapper {
+  position: absolute;
+  bottom: 200px;
 }
 
 .testimonials-wrapper {
@@ -21,7 +44,7 @@
 .left-cont-testimonials {
   width: 916px;
   height: 900px;
-  background-color: #95A530;
+  background-color: $foodamental-green;
   border-bottom-right-radius: 30px;
 }
 
@@ -38,6 +61,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.right-cont-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.testimonials-title :first-child {
+  font-size: 2.5rem;
+  font-family: Abhaya;
+}
+
+.testimonials-title :nth-child(2) {
+  font-size: 2rem;
+}
+
+.testimonial-paragraph {
+  width: 60%;
 }
 
 .each-testimonial {

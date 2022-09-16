@@ -1,0 +1,40 @@
+.foodamental-text-wrapper a {
+    text-decoration: none;
+    padding: 20px 40px;
+    color: #fff;
+    background-color: $foodamental-green;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+
+.learn-more-btn {
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #fff;
+    background-color: $foodamental-green;
+    border-radius: 3px;
+    border-radius: 50px;
+}
+
+.learn-more-btn:hover {
+    color:#fff;
+}
+
+.latestnews-btn {
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #000;
+    border: 5px solid #000;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.left-footer :nth-child(3) {
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #000;
+    border: 5px solid #000;
+    border-radius: 50px;
+    font-weight: bold;
+  }
