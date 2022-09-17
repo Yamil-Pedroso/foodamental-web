@@ -1,0 +1,13 @@
+<div class = "form">
+  <%= simple_form_for(@testimonial) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :profession %>
+    <%= f.input :content %>
+    <%= f.input :date %>
+    <%= f.input :photo, as: :file%>
+
+      <div class="form-actions">
+        <%= f.button :submit, 'Save' %>
+      </div>
+  <% end %>
+</div>

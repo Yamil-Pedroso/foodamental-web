@@ -1,2 +1,10 @@
-<h1>Testimonials#show</h1>
-<p>Find me in app/views/testimonials/show.html.erb</p>
+<div class="show-wrapper">
+  <%= cl_image_tag(@testimonial.photo.key, width: 600, height: 500, crop: :fill) %>
+<div>
+
+<div>
+  <%= link_to "Edit this testimonial", edit_testimonial_path(@testimonial) %> |
+  <%= link_to "Back to testimonials", testimonials_path %>
+
+  <%= button_to "Destroy this testimonial", @testimonial, method: :delete, data: { confirm: 'Are you sure?'}%>
+</div>
