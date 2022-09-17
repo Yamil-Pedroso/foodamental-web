@@ -1,16 +1,35 @@
 
 <div class="testimonials-wrapper">
-    <% @testimonials.each do |testimonial| %>
-         <% if testimonial.photo.attached? %>
-           <%= link_to edit_testimonial_path(@user, testimonial) do %>
-             <%= cl_image_tag testimonial.photo.key, height: 300, width: 400, crop: :fill %>
-            <%end%>
-          <% end %>
-            <div class="testimonial-content">
-                <h2><%= testimonial.name %></h2>
-                <p><%= testimonial.content %></p>
-            </div>
+  <div class="card-group">
+     <% @testimonials.each do |testimonial| %>
+      <% if testimonial.photo.attached? %>
+      <div class="card-style">
+        <%= link_to edit_testimonial_path(@user, testimonial) do %>
+          <%= cl_image_tag testimonial.photo.key, height: 300, width: 400, crop: :fill, class:"testimonial-img" %>
+        <%end%>
+        <div class="card-body">
+          <h5 class="card-title"><%= testimonial.name %></h5>
+          <p class="card-text"></p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><%= testimonial.date %></small>
+        </div>
+      </div>
+       <%end %>
     <% end %>
+  </div>
+
+  <% @testimonials.each.first(1).each do |testimonial| %>
+      <div class="testimonial-text-wrapper">
+        <h3 class="testimonial-title"><%= testimonial.name %></h3>
+        <h2><%= testimonial.profession %></h2>
+        <p><%= testimonial.content %></p>
+      </div>
+  <% end %>
 </div>
 
-<%= link_to "Create your testimonial", new_testimonial_path %>
+
+
+<div class="btn-create-wrapper">
+  <%= link_to "Create your testimonial", new_testimonial_path, class: "create-btn" %>
+</div>
