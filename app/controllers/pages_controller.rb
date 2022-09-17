@@ -4,6 +4,7 @@ class PagesController < ApplicationController
 
   def home
     @user = current_user
+    @testimonials = Testimonial.all
   end
 
   def recommendations

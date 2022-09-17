@@ -84,83 +84,29 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
        </div>
-    <!-- TESTIMONIALS CARRUSEL -->
-    <div class="testimonial-carrusel-wrapper">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"   aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner carrusel-wrapper">
-          <div class="carousel-item active test">
-             <div class="card-group card-test">
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1540331547168-8b63109225b7?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1319&q=80" class="img-style" alt="...">
-              </div>
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1606787364406-a3cdf06c6d0c?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" class="img-style" alt="...">
-              </div>
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1509331739867-7507a7359de2?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" class="img-style" alt="...">
-              </div>
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1523262941688-de5d977e2399?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286&q=80" class="img-style" alt="...">
-              </div>
-            </div>
+    <!-- TESTIMONIALS SLIDE -->
+   <div class="card-group">
+         <% @testimonials.each do |testimonial| %>
+          <% if testimonial.photo.attached? %>
+          <div class="card-style">
+            <%= link_to edit_testimonial_path(testimonial) do %>
+              <%= cl_image_tag testimonial.photo.key, height: 400, width: 400, crop: :fill, class:"testimonial-img" %>
+            <%end%>
           </div>
-          <div class="carousel-item">
-            <div class="card-group">
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1539012511887-d91e166bc41e?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fHBlb3BsZSUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" class="img-style" alt="...">
-              </div>
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1547417080-bdc11256756f?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fHBlb3BsZSUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" class="img-style" alt="...">
-              </div>
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1556908153-c0e609dda194?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&  auto=format&fit=crop&w=1287&q=80" class="img-style" alt="...">
-              </div>
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" class="img-style" alt="...">
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card-group">
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" class="img-style" alt="...">
-              </div>
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1594916107106-4837e3ed0e6e?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" class="img-style" alt="...">
-              </div>
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" class="img-style" alt="...">
-              </div>
-              <div class="card-style">
-                <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80" class="img-style" alt="...">
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+           <%end %>
+        <% end %>
     </div>
-    <!-- FINISH TESTIMONIALS CARRUSEL -->
+    <!-- FINISH TESTIMONIALS SLIDE -->
     </div>
     <!-- FINISH TESTIMONIALS -->
 
     <!-- TESTIMONIALS TEXT -->
     <div class="testimonial-text-wrapper">
       <div class="each-testimonial">
-         <h2><span>MARY DOE</span> - COO, ZURICH ENTERPRISES, INC.</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, nisl eget ultricies tincidunt, elit nisl aliquam mauris, et ultricies nisl nunc eget lorem. Sed auctor, nisl eget ultricies tincidunt, elit nisl aliquam mauris</h4>
+         <% @testimonials.each.first(1).each do |testimonial| %>
+            <h2><span><%= testimonial.name.upcase %></span> - <%= testimonial.profession.upcase %></h2>
+            <h4><%= testimonial.content %></h4>
+          <% end %>
       </div>
     </div>
     <!-- FINISH TESTIMONIALS TEXT -->
